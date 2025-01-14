@@ -41,7 +41,7 @@
                 const response = await fetch("https://script.google.com/macros/s/AKfycbyCA06b4VGJYBks59-lKmcEL4Sy6o3U33S5r852T18bbqK7yeT3FcNzw-iRKNaDnv8k/exec?email=" + encodeURIComponent(email));
                 const data = await response.json();
                 if (data && data.randomNumber) {
-                    resultElement.textContent = `乱数: ${data.randomNumber}`;
+                    resultElement.textContent = `あなたの整理番号は！ ${data.randomNumber}`;
                 } else {
                     resultElement.textContent = "メールアドレスが見つかりませんでした。";
                 }
